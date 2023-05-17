@@ -1,0 +1,42 @@
+
+
+
+{{!-- home --}}
+
+<div class="csschovui" >
+<div class="mt-6">
+  <div class="row">
+
+    {{#each users}}
+     <div class="col-sm-6 col-md-3">
+      <div class="card card-document card-css-home ">
+       <a href="/documents/{{this.fullname}}">
+         <img src="{{this.fullname}}" class="card-img-top" alt="{{this.fullname }}">
+       </a>
+            
+ 
+  <div class="card-body">
+   <a href="/documents/{{this.fullname}}">
+   <h5 class="card-title">{{this.username }}</h5>
+    </a>
+    <p class="card-text">{{this.description }}</p>
+    <a href="/documents/{{this.username}}" class="btn btn-primary">Xem tài liệu</a>
+  </div>
+</div>
+    </div>
+    
+    {{/each}}
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
